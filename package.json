@@ -8,7 +8,7 @@
     "url": "http://github.com/mivion/swisseph.git"
   },
   "main": "./lib/swisseph.js",
-  "types": "./lib/swisseph.d.ts",
+  "types": "./dist/types/browser/index.d.ts",
   "keywords": [
     "swiss",
     "ephemeris",
@@ -26,6 +26,20 @@
   "scripts": {
     "install": "node-gyp rebuild",
     "test": "node test/test.js",
-    "start": "node app.js"
+    "start": "node app.js",
+    "build:wasm": "bash scripts/build-wasm.sh",
+    "build:ts": "tsc",
+    "build": "npm run build:wasm && npm run build:ts",
+    "prepublishOnly": "npm run build"
+  },
+  "module": "./dist/esm/browser/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/esm/browser/index.js",
+      "require": "./lib/swisseph.js"
+    }
+  },
+  "devDependencies": {
+    "typescript": "^5.4.5"
   }
 }

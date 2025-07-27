@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es2018",
+    "module": "NodeNext",
+    "declaration": true,
+    "outDir": "dist/esm",
+    "declarationDir": "dist/types",
+    "rootDir": "src",
+    "strict": true,
+    "esModuleInterop": true,
+    "moduleResolution": "nodenext",
+    "paths": {
+      "swisseph-wasm": [
+        "dist/swisseph.js"
+      ]
+    },
+    "baseUrl": "."
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
+}

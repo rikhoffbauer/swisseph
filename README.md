@@ -1,4 +1,4 @@
-Swiss Ephemeris binding for node.js [![Build Status](https://travis-ci.org/mivion/swisseph.svg?branch=master)](https://travis-ci.org/mivion/swisseph)
+Swiss Ephemeris for Node.js and modern browsers [![Build Status](https://travis-ci.org/mivion/swisseph.svg?branch=master)](https://travis-ci.org/mivion/swisseph)
 ===================================
 
 **NOTE: Need help to mantain this project. Please write me.**
@@ -13,7 +13,7 @@ Swiss Ephemeris binding for node.js.
 
 See [Swiss Ephemeris](http://www.astro.com/swisseph/swephinfo_e.htm) for more details.
 
-Supported platforms: **Mac OS X** | **Windows** | **Linux** | **FreeBSD**
+This library now ships with a WebAssembly build for browser environments. See the documentation in docs/getting-started.md for details.
 
 ## Getting started
 
@@ -141,3 +141,4 @@ Please feel free to fill [issues](http://github.com/mivion/swisseph/issues) for 
 ## License
 
 The license for this project is the same as original [Swiss Ephemeris](http://www.astro.com/swisseph/swephinfo_e.htm).
+\nFor more documentation see [docs/getting-started.md](docs/getting-started.md) and [docs/cookbook.md](docs/cookbook.md).
